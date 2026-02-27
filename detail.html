@@ -1,0 +1,32 @@
+<html>
+    <button class="back-btn" onclick="backToDiary()">← Quay lại nhật ký</button>
+
+<style>
+  .back-btn{
+  margin: 10px;
+  padding: 10px 10px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: brown;
+  color: white;
+  transform: translateX(-3px);
+}
+</style>
+<script>
+  function backToDiary() {
+    window.location.href = "index.html#nhatky";
+  }
+</script>
+<body>
+    <h1 id="detail-title"></h1>
+    <div id="detail-content"></div>
+    <script src="detail.js"></script>
+</body>
+</html>

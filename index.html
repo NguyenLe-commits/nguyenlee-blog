@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web demo</title>
+  <link rel="stylesheet" href="main.css">
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="box">
+    <img src="logo.jpg" alt="Blog của Lee" class="logo">
+
+    <nav class="menu">
+      <ul>
+        <li><a href="#" onclick="showContent('home'); return false;">HOME</a></li>
+        <li><a href="#" onclick="showContent('nhatky'); return false;">NHẬT KÝ</a></li>
+        <li><a href="#" onclick="showContent('gioithieu'); return false;">GIỚI THIỆU</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!-- HOME -->
+  <section id="home" class="content">
+    <div class="post">
+      <input 
+        type="text" 
+        id="post-title" 
+        placeholder="Tiêu đề bài viết" 
+        class="post-title"
+      >
+
+      <textarea 
+        id="post-content" 
+        placeholder="Viết gì đó..." 
+        class="post-content"
+      ></textarea>
+
+      <button 
+        type="button" 
+        class="post-bt" 
+        onclick="addPost()"
+      >
+        Đăng bài
+      </button>
+    </div>
+  </section>
+
+
+  <!-- NHẬT KÝ -->
+  <section id="nhatky" class="content" style="display: none;">
+    <h2>Nhật ký của tôi</h2>
+    <div class="diary-container" id="diary-container"></div>
+  </section>
+
+
+  <!-- GIỚI THIỆU -->
+  <section id="gioithieu" class="content" style="display: none;">
+    <p>Đây là nơi mình ghi lại những điều mình tò mò và đang học hỏi mỗi ngày.
+      Từ cách xây dựng một website, học SEO, cho đến cách các công ty giải trí Hàn Quốc vận hành và quản lý idol - tất cả đều xuất phát từ sự quan sát và tìm hiểu cá nhân.
+      <br>
+      <br>Blog này không phải để chứng minh điều gì, cũng như chỉ là ý kiến và quan điểm cá nhân của mình. Nếu bạn cũng thích khám phá cách mọi thứ hoạt động phía sau hậu trường, có lẽ bạn sẽ tìm thấy điều thú vị ở đây.
+    <br>
+    <br>Cảm ơn mọi người đã ủng hộ &#10084;
+  </p>
+  </section>
+
+</body>
+</html>
