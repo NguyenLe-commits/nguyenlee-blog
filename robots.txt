@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nguyenle-commits.github.io/nguyenlee-blog/sitemap.xml
